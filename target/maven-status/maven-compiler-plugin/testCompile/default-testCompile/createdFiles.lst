@@ -1,0 +1,5 @@
+WebLogin/StepDefinition/AddItemsInCartAndPlaceOrder.class
+RunnerTest.class
+VerticalCommons/WebHooks.class
+WebLogin/StepDefinition/WebLogin.class
+VerticalCommons/CommonSteps.class
