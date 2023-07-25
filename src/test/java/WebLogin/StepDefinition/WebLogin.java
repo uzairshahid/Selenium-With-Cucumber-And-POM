@@ -3,6 +3,8 @@ package WebLogin.StepDefinition;
 import io.cucumber.java.en.And;
 import pages.Page;
 
+import java.util.concurrent.TimeUnit;
+
 public class WebLogin extends Page {
 
     @And("^\\[Admin Portal] User enters Email \"([^\"]*)\"$")
@@ -20,8 +22,10 @@ public class WebLogin extends Page {
         getPageLogin().loginClick().click();
     }
     @And("^\\[Admin Portal] Go to side menu")
-    public void goToSideMenu() {
+    public void goToSideMenu() throws InterruptedException {
         getPageLogin().sideMenuClick().click();
+        TimeUnit.SECONDS.sleep(3);
+
     }
     @And("^\\[Admin Portal] Click on logout button")
     public void logoutButton() {

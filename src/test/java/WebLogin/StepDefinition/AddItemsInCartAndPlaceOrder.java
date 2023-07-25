@@ -7,6 +7,7 @@ import pages.Page;
 import java.sql.Driver;
 import java.sql.DriverManager;
 import java.time.Duration;
+import java.util.concurrent.TimeUnit;
 
 
 public class AddItemsInCartAndPlaceOrder extends Page {
@@ -45,33 +46,12 @@ public class AddItemsInCartAndPlaceOrder extends Page {
     public void continueOrdering() {
         getItemsInCart().continueOrder().click();
     }
+
     @And("^\\[Admin Portal] Click on finish button to complete ordering")
-    public void finishOrdering() {
+    public void finishOrdering() throws InterruptedException {
         getItemsInCart().finishOrder().click();
+
     }
 
 
-
-
-
-
-
-
-//    @And("^\\[Admin Portal] User enters Password \"([^\"]*)\"$")
-//    public void enterPassword(String password) {
-//        getPageLogin().getPassword().sendKeys(password);
-//    }
-//
-//    @And("^\\[Admin Portal] Click on login button")
-//    public void enterPassword() {
-//        getPageLogin().loginClick().click();
-//    }
-//
-//    And   [Admin Portal]
-//    And   [Admin Portal] User should be able to visit on checkout screen by click on checkout icon
-//    And   [Admin Portal] Click on place order
-
-
-
 }
-
