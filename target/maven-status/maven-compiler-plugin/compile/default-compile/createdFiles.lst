@@ -1,8 +1,0 @@
-core/utils/SeleniumHook/SeleniumUtil.class
-pages/ProductsScreen/PageProducts.class
-core/utils/ConfigUtil.class
-pages/Page.class
-core/utils/SeleniumHook/SeleniumRunner.class
-utilities/Drivers/DriverManager.class
-pages/BaseScreen/PageLogin.class
-utilities/JSONReader.class
