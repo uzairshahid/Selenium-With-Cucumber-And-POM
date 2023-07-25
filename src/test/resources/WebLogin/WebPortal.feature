@@ -22,4 +22,4 @@ Feature: Admin Portal Web
 
   @WEB @LOGOUT_USER
   Scenario: Verify User should be able To logout successfully
-    And   [Admin Portal] Click on login button
+    And [Admin Portal] Click on logout button button
